@@ -65,12 +65,26 @@ export default {
 				},
 				// Portfolio custom colors
 				'portfolio': {
-					'dark': '#121212',
-					'light': '#f5f5f7',
-					'blue': '#4a6cf7',
-					'purple': '#9b87f5',
-					'pink': '#ed5eb3',
-					'gray': '#94a3b8',
+					// Monochromatic color scheme
+					'black': '#000000',
+					'gray-900': '#0F0F0F',
+					'gray-800': '#1A1A1A',
+					'gray-700': '#2C2C2C',
+					'gray-600': '#3D3D3D',
+					'gray-500': '#666666',
+					'gray-400': '#888888',
+					'gray-300': '#AAAAAA',
+					'gray-200': '#D1D1D1',
+					'gray-100': '#E8E8E8',
+					'gray-50': '#F5F5F5',
+					'white': '#FFFFFF',
+					// Keep these for backward compatibility but consider replacing their usage
+					'dark': '#000000', 
+					'light': '#FFFFFF',
+					'blue': '#000000',
+					'purple': '#333333',
+					'pink': '#666666',
+					'gray': '#888888',
 				}
 			},
 			borderRadius: {
@@ -127,7 +141,8 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'portfolio-gradient': 'linear-gradient(90deg, #4a6cf7 0%, #9b87f5 50%, #ed5eb3 100%)',
+				'portfolio-gradient': 'linear-gradient(90deg, #000000 0%, #666666 80%, #FFFFFF 100%)',
+
 			}
 		}
 	},

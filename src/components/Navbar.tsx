@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                 href="#home" 
                 className="font-bold text-2xl gradient-text"
               >
-                Portfolio
+                AH
               </a>
             </div>
             

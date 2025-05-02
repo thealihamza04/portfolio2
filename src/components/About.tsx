@@ -9,7 +9,7 @@ const skills = [
   { name: 'Framer Motion', level: 80 },
   { name: 'Tailwind CSS', level: 95 },
   { name: 'UI/UX Design', level: 75 },
-  { name: 'Three.js', level: 70 },
+  { name: 'Node.js', level: 70 },
 ];
 
 const About = () => {
@@ -89,7 +89,7 @@ const About = () => {
                   </div>
                   <div className="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
                     <motion.div
-                      className="h-full bg-portfolio-gradient rounded-full"
+                      className="h-full bg-black rounded-full"
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.level}%` }}
                       transition={{ duration: 1, delay: 0.3 + index * 0.1 }}
@@ -110,7 +110,6 @@ const About = () => {
               {['JavaScript', 'Node.js', 'CSS', 'HTML5', 'Git', 'Figma'].map((item, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ scale: 1.05 }}
                   className="px-4 py-2 bg-gray-100 rounded-full text-center text-sm font-medium"
                 >
                   {item}

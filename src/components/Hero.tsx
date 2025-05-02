@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden -z-10">
         <motion.div 
-          className="absolute top-1/3 left-1/4 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply blur-3xl opacity-70"
+          className="absolute top-1/3 left-1/4 w-64 h-64 bg-gray-200 rounded-full mix-blend-multiply blur-3xl opacity-70"
           animate={{ 
             x: [0, 30, 0], 
             y: [0, -30, 0]
@@ -20,7 +20,7 @@ const Hero = () => {
           }}
         />
         <motion.div 
-          className="absolute top-1/2 right-1/3 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply blur-3xl opacity-70"
+          className="absolute top-1/2 right-1/3 w-72 h-72 bg-gray-300 rounded-full mix-blend-multiply blur-3xl opacity-70"
           animate={{ 
             x: [0, -40, 0], 
             y: [0, 40, 0]
@@ -33,7 +33,7 @@ const Hero = () => {
           }}
         />
         <motion.div 
-          className="absolute bottom-1/4 right-1/4 w-56 h-56 bg-pink-200 rounded-full mix-blend-multiply blur-3xl opacity-70"
+          className="absolute bottom-1/4 right-1/4 w-56 h-56 bg-gray-100 rounded-full mix-blend-multiply blur-3xl opacity-70"
           animate={{ 
             x: [0, 50, 0], 
             y: [0, 30, 0]
@@ -55,14 +55,14 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <div className="inline-block relative">
+            {/* <div className="inline-block relative">
               <div className="absolute inset-0 bg-portfolio-gradient rounded-full blur-xl opacity-70 -z-10 scale-110" />
               <img 
-                src="https://via.placeholder.com/150" 
+                src="../../public/ali.png" 
                 alt="Profile" 
-                className="rounded-full w-32 h-32 object-cover border-4 border-white shadow-lg"
+                className="rounded-xl w-36 h-36 object-cover border-2 border-white shadow-lg"
               />
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -71,9 +71,9 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="mb-8"
           >
-            <span className="text-portfolio-gray font-medium text-lg">Hello, I'm</span>
+            <span className="text-portfolio-gray-400 font-medium text-lg">Hello, I'm</span>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 mt-2">
-              <span className="gradient-text">John Doe</span>
+              <span className="gradient-text">Ali Hamza</span>
             </h1>
           </motion.div>
 
@@ -119,7 +119,7 @@ const Hero = () => {
                 strokeWidth="2" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
-                className="text-portfolio-purple"
+                className="text-portfolio-gray-700"
               >
                 <line x1="12" y1="5" x2="12" y2="19"></line>
                 <polyline points="19 12 12 19 5 12"></polyline>

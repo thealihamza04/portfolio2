@@ -3,40 +3,52 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../lib/motion';
 
-const projectsData = [
-  {
-    id: 1,
-    title: 'E-commerce Website',
-    category: 'Web Development',
-    image: 'https://via.placeholder.com/600x400',
-    description: 'A fully responsive e-commerce platform with animations and modern UI.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion']
-  },
-  {
-    id: 2,
-    title: 'Mobile Banking App',
-    category: 'UI/UX Design',
-    image: 'https://via.placeholder.com/600x400',
-    description: 'Intuitive and secure banking application with smooth transitions.',
-    technologies: ['Figma', 'Prototyping', 'User Research', 'UI Design']
-  },
-  {
-    id: 3,
-    title: 'Interactive Dashboard',
-    category: 'Web Development',
-    image: 'https://via.placeholder.com/600x400',
-    description: 'Data visualization dashboard with real-time updates and filtering.',
-    technologies: ['React', 'D3.js', 'Recharts', 'Firebase']
-  },
-  {
-    id: 4,
-    title: 'Social Media Platform',
-    category: 'Full Stack',
-    image: 'https://via.placeholder.com/600x400',
-    description: 'Community platform with real-time messaging and content sharing.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Socket.io']
-  }
-];
+  const projectsData = [
+  
+    {
+      id: 2,
+      title: 'Big Brainss',
+      category: 'UI/UX Design',
+      image: 'https://via.placeholder.com/600x400',
+      description: 'Online tech course-selling platform with simple UI and responsive design.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS']
+    },
+  
+  
+    {
+      id: 5,
+      title: 'ReadNest',
+      category: 'Web Development',
+      image: 'https://via.placeholder.com/600x400',
+      description: 'Book selling app with clean UI, categories, and responsive layout.',
+      technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'MongoDB']
+    },
+    {
+      id: 6,
+      title: 'Quizzing WebApp',
+      category: 'AI Tool',
+      image: 'https://via.placeholder.com/600x400',
+      description: 'Upload question papers and get instant answers using AI.',
+      technologies: ['React', 'Node.js', 'OpenAI API', 'Tailwind CSS']
+    },
+    {
+      id: 7,
+      title: 'CodeSphere',
+      category: 'Web Tool',
+      image: 'https://via.placeholder.com/600x400',
+      description: 'Explore tools, libraries, and timeline for multiple programming languages.',
+      technologies: ['React', 'Framer Motion', 'Tailwind CSS']
+    },
+    {
+      id: 8,
+      title: 'Random Quote Generator',
+      category: 'Frontend',
+      image: 'https://via.placeholder.com/600x400',
+      description: 'Generates inspiring random quotes with just one click.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Quote API']
+    }
+  ];
+
 
 const categories = ['All', 'Web Development', 'UI/UX Design', 'Full Stack'];
 
@@ -58,9 +70,9 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.25 }}
           className="mb-16 text-center"
         >
-          <motion.p variants={fadeIn('up', 0.2)} className="text-portfolio-blue font-medium mb-2">
+          {/* <motion.p variants={fadeIn('up', 0.2)} className="text-portfolio-blue font-medium mb-2">
             My Work
-          </motion.p>
+          </motion.p> */}
           <motion.h2 variants={fadeIn('up', 0.3)} className="text-4xl font-bold mb-4">
             Recent Projects
           </motion.h2>
@@ -77,8 +89,8 @@ const Projects = () => {
           {categories.map((category, index) => (
             <motion.button
               key={index}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              // whileHover={{ scale: 1.05 }}
+              // whileTap={{ scale: 0.95 }}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300
                 ${activeCategory === category
                   ? 'bg-portfolio-blue text-white shadow-md'
