@@ -23,9 +23,7 @@ const About = () => {
           viewport={{ once: true, amount: 0.25 }}
           className="mb-16 text-center"
         >
-          <motion.p variants={fadeIn('up', 0.2)} className="text-portfolio-blue font-medium mb-2">
-            About Me
-          </motion.p>
+          
           <motion.h2 variants={fadeIn('up', 0.3)} className="text-4xl font-bold mb-4">
             My Background & Skills
           </motion.h2>

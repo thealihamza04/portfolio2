@@ -9,7 +9,7 @@ import { fadeIn, staggerContainer } from '../lib/motion';
       id: 2,
       title: 'Big Brainss',
       category: 'UI/UX Design',
-      image: 'https://via.placeholder.com/600x400',
+      image: 'https://www.reshot.com/preview-assets/illustrations/AFNZ96EPVS/online-course-AFNZ96EPVS-w1600.jpg',
       description: 'Online tech course-selling platform with simple UI and responsive design.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS']
     },
@@ -19,7 +19,7 @@ import { fadeIn, staggerContainer } from '../lib/motion';
       id: 5,
       title: 'ReadNest',
       category: 'Web Development',
-      image: 'https://via.placeholder.com/600x400',
+      image: 'https://www.reshot.com/preview-assets/illustrations/XD3TUVR5EB/book-shelf-XD3TUVR5EB-w600.jpg',
       description: 'Book selling app with clean UI, categories, and responsive layout.',
       technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'MongoDB']
     },
@@ -27,7 +27,7 @@ import { fadeIn, staggerContainer } from '../lib/motion';
       id: 6,
       title: 'Quizzing WebApp',
       category: 'AI Tool',
-      image: 'https://via.placeholder.com/600x400',
+      image: 'https://elements-resized.envatousercontent.com/elements-cover-images/9dbef117-7d78-48eb-a2c2-0764e39e8eba?w=1370&cf_fit=scale-down&q=85&format=auto&s=a2d84be72d58f255b4dd85eec826497f1f9c2b2711e00cffd6c53eeba89bb10e',
       description: 'Upload question papers and get instant answers using AI.',
       technologies: ['React', 'Node.js', 'OpenAI API', 'Tailwind CSS']
     },
@@ -35,7 +35,7 @@ import { fadeIn, staggerContainer } from '../lib/motion';
       id: 7,
       title: 'CodeSphere',
       category: 'Web Tool',
-      image: 'https://via.placeholder.com/600x400',
+      image: 'https://www.reshot.com/preview-assets/illustrations/B9HDTVXC3W/development-team-B9HDTVXC3W-w600.jpg',
       description: 'Explore tools, libraries, and timeline for multiple programming languages.',
       technologies: ['React', 'Framer Motion', 'Tailwind CSS']
     },
@@ -43,14 +43,14 @@ import { fadeIn, staggerContainer } from '../lib/motion';
       id: 8,
       title: 'Random Quote Generator',
       category: 'Frontend',
-      image: 'https://via.placeholder.com/600x400',
+      image: 'https://elements-resized.envatousercontent.com/elements-preview-images/ae2dad80-aa4d-4990-963c-35f877d38f30?w=1370&cf_fit=scale-down&q=85&format=auto&s=0fb8fc8328292848e2d717f5839e7235c1c2448f19827e1b87a2bf03a672163e',
       description: 'Generates inspiring random quotes with just one click.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'Quote API']
     }
   ];
 
 
-const categories = ['All', 'Web Development', 'UI/UX Design', 'Full Stack'];
+const categories = ['All', 'Web Development', 'UI/UX Design'];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');

@@ -55,9 +55,6 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.25 }}
           className="mb-16 text-center"
         >
-          <motion.p variants={fadeIn('up', 0.2)} className="text-portfolio-blue font-medium mb-2">
-            Get In Touch
-          </motion.p>
           <motion.h2 variants={fadeIn('up', 0.3)} className="text-4xl font-bold mb-4">
             Contact Me
           </motion.h2>
@@ -153,14 +150,14 @@ const Contact = () => {
                 <motion.input
                   variants={inputVariants}
                   initial="initial"
-                  whileFocus="focus"
+                  // whileFocus="focus"
                   type="text"
                   id="name"
                   name="name"
                   value={formState.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-portfolio-blue/50 transition-all duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none  focus:ring-portfolio-blue/50 transition-all duration-300"
                   placeholder="John Doe"
                 />
               </div>
@@ -172,7 +169,7 @@ const Contact = () => {
                 <motion.input
                   variants={inputVariants}
                   initial="initial"
-                  whileFocus="focus"
+                  // whileFocus="focus"
                   type="email"
                   id="email"
                   name="email"
@@ -191,7 +188,7 @@ const Contact = () => {
                 <motion.textarea
                   variants={inputVariants}
                   initial="initial"
-                  whileFocus="focus"
+                  // whileFocus="focus"
                   id="message"
                   name="message"
                   value={formState.message}
