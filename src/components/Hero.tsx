@@ -4,7 +4,7 @@ import AnimatedText from './AnimatedText';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center section-padding">
+    <section id="home" className="relative min-h-screen flex items-center justify-center md:section-padding">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden -z-10">
         <motion.div 
@@ -77,10 +77,10 @@ const Hero = () => {
             </h1>
           </motion.div>
 
-          <div className="overflow-hidden mb-8">
+          <div className="overflow-hidden  mb-8  md:px-0">
             <AnimatedText
+              className="text-xs opacity-60 md:text-3xl font-semibold max-w-3xl"
               text="Creative Developer & Designer creating beautiful digital experiences"
-              className="text-xl md:text-3xl font-semibold max-w-3xl"
             />
           </div>
 
@@ -88,12 +88,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="flex flex-wrap gap-4 justify-center"
+            className="flex flex-wrap gap-2 justify-center"
           >
-            <a href="#projects" className="button-primary">
+            <a href="#projects" className="button-primary text-xs md:text-lg">
               View My Work
             </a>
-            <a href="#contact" className="button-outline">
+            <a href="#contact" className="button-outline text-xs md:text-lg">
               Contact Me
             </a>
           </motion.div>

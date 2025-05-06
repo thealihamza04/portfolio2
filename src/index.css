@@ -102,13 +102,13 @@
   }
   
   .button-primary {
-    @apply px-8 py-4 bg-portfolio-blue text-white rounded-full font-medium 
+    @apply px-4 md:px-8 py-4 bg-portfolio-blue text-white rounded-full font-medium 
     transition-all duration-300 hover:scale-105 hover:shadow-lg
     hover:shadow-portfolio-blue/20 active:scale-95;
   }
   
   .button-outline {
-    @apply px-8 py-4 border border-portfolio-blue text-portfolio-blue rounded-full font-medium 
+    @apply px-4 md:px-8 py-4 border border-portfolio-blue text-portfolio-blue rounded-full font-medium 
     transition-all duration-300 hover:scale-105 hover:bg-portfolio-blue/10 
     hover:shadow-lg hover:shadow-portfolio-blue/20 active:scale-95;
   }

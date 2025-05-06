@@ -21,7 +21,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   const renderWords = () => {
     return (
       <motion.div
-        className="flex flex-wrap"
+        className="flex flex-wrap  "
         variants={staggeredFadeIn}
         initial="hidden"
         whileInView="show"
@@ -29,7 +29,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
       >
         {words.map((word, index) => (
           <motion.span
-            className="mr-2 inline-block"
+            className="mr-2 inline-block "
             key={index}
             variants={staggeredLettersFade}
           >

@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 section-padding">
-      <div className="container mx-auto">
+      <div className="md:container mx-auto">
         <motion.div
           variants={staggerContainer(0.1, 0.1)}
           initial="hidden"
